@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    font-family: 'Urbanist', sans-serif;
+}
+
+body {
+    max-width: 100vw;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+.link {
+    color: inherit;
+}
+
+.absoluteBx {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    min-height: calc(100vh - 50px);
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+}
+
+@media screen and (max-width: 480px) {
+    .absoluteBx {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 5fr;
+    }
+}
